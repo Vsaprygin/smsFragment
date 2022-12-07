@@ -24,7 +24,7 @@ class SettingsFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         binding.advansedBtn.setOnClickListener {
             binding.codeSMS.text = "Кнопка сработала"
-//            Navigation.findNavController(binding.root).navigate(R.id.action_settingsFragment_to_advansedFragment)
+            Navigation.findNavController(binding.root).navigate(R.id.action_settingsFragment_to_advansedFragment)
         }
     }
 }
