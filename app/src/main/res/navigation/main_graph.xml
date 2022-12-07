@@ -19,9 +19,9 @@
     </fragment>
     <fragment
         android:id="@+id/advansedFragment"
-        android:name="com.vsaprygin.smsfragment.AdvansedFragment"
+        android:name="com.vsaprygin.smsfragment.AdwansedFragment"
         android:label="fragment_advansed"
-        tools:layout="@layout/fragment_advansed" />
+        tools:layout="@layout/fragment_adwansed" />
     <fragment
         android:id="@+id/viewFragment"
         android:name="com.vsaprygin.smsfragment.ViewFragment"

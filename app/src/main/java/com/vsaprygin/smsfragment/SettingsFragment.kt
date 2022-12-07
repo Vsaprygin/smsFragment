@@ -5,7 +5,6 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.navigation.Navigation
 import com.vsaprygin.smsfragment.databinding.FragmentSettingsBinding
 
@@ -25,6 +24,9 @@ class SettingsFragment : Fragment() {
         binding.advansedBtn.setOnClickListener {
             binding.codeSMS.text = "Кнопка сработала"
             Navigation.findNavController(binding.root).navigate(R.id.action_settingsFragment_to_advansedFragment)
+        }
+        binding.viewBtn.setOnClickListener {
+            Navigation.findNavController(binding.root).navigate(R.id.action_settingsFragment_to_viewFragment)
         }
     }
 }
