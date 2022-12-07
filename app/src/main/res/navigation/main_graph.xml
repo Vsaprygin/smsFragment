@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/settingsFragment">
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.vsaprygin.smsfragment.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_settingsFragment_to_advansedFragment"
+            app:destination="@id/advansedFragment" />
+        <action
+            android:id="@+id/action_settingsFragment_to_viewFragment"
+            app:destination="@id/viewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/advansedFragment"
+        android:name="com.vsaprygin.smsfragment.AdvansedFragment"
+        android:label="fragment_advansed"
+        tools:layout="@layout/fragment_advansed" />
+    <fragment
+        android:id="@+id/viewFragment"
+        android:name="com.vsaprygin.smsfragment.ViewFragment"
+        android:label="fragment_view"
+        tools:layout="@layout/fragment_view" />
+</navigation>
