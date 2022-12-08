@@ -22,11 +22,13 @@ class SettingsFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.advansedBtn.setOnClickListener {
-            binding.codeSMS.text = "Кнопка сработала"
             Navigation.findNavController(binding.root).navigate(R.id.action_settingsFragment_to_advansedFragment)
         }
         binding.viewBtn.setOnClickListener {
             Navigation.findNavController(binding.root).navigate(R.id.action_settingsFragment_to_viewFragment)
+        }
+        binding.exitBtn.setOnClickListener {
+            binding.codeSMS.text = "А теперь любую другую"
         }
     }
 }
